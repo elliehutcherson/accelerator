@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/ellie/Projects/accelerator/build",
+  "command": "/usr/local/bin/avr-g++  -I/Users/ellie/Projects/accelerator/include/avr-libc/include -g -o CMakeFiles/accelerator.elf.dir/blink.cc.o -c /Users/ellie/Projects/accelerator/blink.cc",
+  "file": "/Users/ellie/Projects/accelerator/blink.cc",
+  "output": "CMakeFiles/accelerator.elf.dir/blink.cc.o"
+}
+]

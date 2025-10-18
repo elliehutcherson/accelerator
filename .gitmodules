@@ -1,0 +1,3 @@
+[submodule "include/avr-libc"]
+	path = include/avr-libc
+	url = https://github.com/avrdudes/avr-libc.git
