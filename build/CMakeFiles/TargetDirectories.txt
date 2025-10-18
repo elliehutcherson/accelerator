@@ -1,3 +1,4 @@
 /Users/ellie/Projects/accelerator/build/CMakeFiles/accelerator.elf.dir
+/Users/ellie/Projects/accelerator/build/CMakeFiles/upload.dir
 /Users/ellie/Projects/accelerator/build/CMakeFiles/edit_cache.dir
 /Users/ellie/Projects/accelerator/build/CMakeFiles/rebuild_cache.dir

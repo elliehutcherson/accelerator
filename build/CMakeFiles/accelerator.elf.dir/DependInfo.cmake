@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/ellie/Projects/accelerator/blink.cc" "CMakeFiles/accelerator.elf.dir/blink.cc.o" "gcc" "CMakeFiles/accelerator.elf.dir/blink.cc.o.d"
+  "/Users/ellie/Projects/accelerator/blink.cc" "CMakeFiles/accelerator.elf.dir/blink.cc.obj" "gcc" "CMakeFiles/accelerator.elf.dir/blink.cc.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

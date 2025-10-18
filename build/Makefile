@@ -129,13 +129,26 @@ accelerator.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/accelerator.elf.dir/build.make CMakeFiles/accelerator.elf.dir/build
 .PHONY : accelerator.elf/fast
 
-blink.o: blink.cc.o
-.PHONY : blink.o
+#=============================================================================
+# Target rules for targets named upload
+
+# Build rule for target.
+upload: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 upload
+.PHONY : upload
+
+# fast build rule for target.
+upload/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/upload.dir/build.make CMakeFiles/upload.dir/build
+.PHONY : upload/fast
+
+blink.obj: blink.cc.obj
+.PHONY : blink.obj
 
 # target to build an object file
-blink.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/accelerator.elf.dir/build.make CMakeFiles/accelerator.elf.dir/blink.cc.o
-.PHONY : blink.cc.o
+blink.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/accelerator.elf.dir/build.make CMakeFiles/accelerator.elf.dir/blink.cc.obj
+.PHONY : blink.cc.obj
 
 blink.i: blink.cc.i
 .PHONY : blink.i
@@ -161,8 +174,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... upload"
 	@echo "... accelerator.elf"
-	@echo "... blink.o"
+	@echo "... blink.obj"
 	@echo "... blink.i"
 	@echo "... blink.s"
 .PHONY : help

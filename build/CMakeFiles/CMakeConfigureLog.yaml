@@ -5,7 +5,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/local/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     mode: "program"
     variable: "CMAKE_UNAME"
     description: "Path to a program."
@@ -37,6 +37,7 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/bin"
+        - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
         - "/bin"
@@ -49,15 +50,16 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
-      - "CMakeLists.txt"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineSystem.cmake:207 (message)"
+      - "CMakeLists.txt:23 (project)"
     message: |
-      The system is: Darwin - 24.6.0 - x86_64
+      The target system is: Generic -  - avr
+      The host system is: Darwin - 24.6.0 - x86_64
   -
     kind: "find-v1"
     backtrace:
       - "/usr/local/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
     description: "Path to a program."
@@ -101,6 +103,7 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/bin"
+        - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
         - "/bin"
@@ -118,7 +121,7 @@ events:
       - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -138,6 +141,7 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/bin"
+        - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
         - "/bin"
@@ -153,7 +157,7 @@ events:
       - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler: /usr/local/bin/avr-gcc 
@@ -174,7 +178,7 @@ events:
     backtrace:
       - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     mode: "program"
     variable: "CMAKE_AR"
     description: "Path to a program."
@@ -204,6 +208,7 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/bin"
+        - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
         - "/bin"
@@ -218,7 +223,7 @@ events:
     backtrace:
       - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     mode: "program"
     variable: "CMAKE_RANLIB"
     description: "Path to a program."
@@ -248,6 +253,7 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/bin"
+        - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
         - "/bin"
@@ -262,7 +268,7 @@ events:
     backtrace:
       - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     mode: "program"
     variable: "CMAKE_STRIP"
     description: "Path to a program."
@@ -292,6 +298,7 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/bin"
+        - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
         - "/bin"
@@ -306,7 +313,7 @@ events:
     backtrace:
       - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     mode: "program"
     variable: "CMAKE_LINKER"
     description: "Path to a program."
@@ -336,6 +343,7 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/bin"
+        - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
         - "/bin"
@@ -350,7 +358,7 @@ events:
     backtrace:
       - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     mode: "program"
     variable: "CMAKE_NM"
     description: "Path to a program."
@@ -380,6 +388,7 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/bin"
+        - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
         - "/bin"
@@ -394,7 +403,7 @@ events:
     backtrace:
       - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     mode: "program"
     variable: "CMAKE_OBJDUMP"
     description: "Path to a program."
@@ -424,6 +433,7 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/bin"
+        - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
         - "/bin"
@@ -438,7 +448,7 @@ events:
     backtrace:
       - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     mode: "program"
     variable: "CMAKE_OBJCOPY"
     description: "Path to a program."
@@ -468,6 +478,7 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/bin"
+        - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
         - "/bin"
@@ -482,7 +493,7 @@ events:
     backtrace:
       - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     mode: "program"
     variable: "CMAKE_READELF"
     description: "Path to a program."
@@ -512,6 +523,7 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/bin"
+        - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
         - "/bin"
@@ -526,7 +538,7 @@ events:
     backtrace:
       - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     mode: "program"
     variable: "CMAKE_DLLTOOL"
     description: "Path to a program."
@@ -577,6 +589,7 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/bin"
+        - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
         - "/bin"
@@ -591,7 +604,7 @@ events:
     backtrace:
       - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     mode: "program"
     variable: "CMAKE_ADDR2LINE"
     description: "Path to a program."
@@ -621,6 +634,7 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/bin"
+        - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
         - "/bin"
@@ -635,7 +649,7 @@ events:
     backtrace:
       - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     mode: "program"
     variable: "CMAKE_TAPI"
     description: "Path to a program."
@@ -686,6 +700,7 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/bin"
+        - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
         - "/bin"
@@ -700,7 +715,7 @@ events:
     backtrace:
       - "/usr/local/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_AR"
     description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
@@ -763,6 +778,7 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/bin"
+        - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
         - "/bin"
@@ -777,7 +793,7 @@ events:
     backtrace:
       - "/usr/local/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_RANLIB"
     description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
@@ -840,6 +856,7 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/bin"
+        - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
         - "/bin"
@@ -857,7 +874,7 @@ events:
       - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -877,6 +894,7 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/bin"
+        - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
         - "/bin"
@@ -892,7 +910,7 @@ events:
       - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler: /usr/local/bin/avr-g++ 
@@ -913,7 +931,7 @@ events:
     backtrace:
       - "/usr/local/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_AR"
     description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
@@ -976,6 +994,7 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/bin"
+        - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
         - "/bin"
@@ -990,7 +1009,7 @@ events:
     backtrace:
       - "/usr/local/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
       - "/usr/local/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_RANLIB"
     description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
@@ -1053,51 +1072,6 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/bin"
-        - "/System/Cryptexes/App/usr/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/sbin"
-        - "/sbin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/local/share/cmake/Modules/Platform/Darwin.cmake:76 (find_program)"
-      - "/usr/local/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:32 (include)"
-      - "CMakeLists.txt"
-    mode: "program"
-    variable: "CMAKE_INSTALL_NAME_TOOL"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "FIRST"
-      SearchAppBundle: "FIRST"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "install_name_tool"
-    candidate_directories:
-      - "/usr/local/bin/"
-      - "/System/Cryptexes/App/usr/bin/"
-      - "/usr/bin/"
-      - "/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/Library/Apple/usr/bin/"
-    searched_directories:
-      - "/usr/local/bin/install_name_tool"
-      - "/System/Cryptexes/App/usr/bin/install_name_tool"
-    found: "/usr/bin/install_name_tool"
-    search_context:
-      ENV{PATH}:
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -1108,519 +1082,31 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
   -
     kind: "try_compile-v1"
     backtrace:
       - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:23 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-7p863y"
-      binary: "/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-7p863y"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: ""
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-7p863y'
-        
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ee151/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ee151.dir/build.make CMakeFiles/cmTC_ee151.dir/build
-        Building C object CMakeFiles/cmTC_ee151.dir/CMakeCCompilerABI.c.o
-        /usr/local/bin/avr-gcc   -v -Wl,-v -o CMakeFiles/cmTC_ee151.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c
-        Using built-in specs.
-        Reading specs from /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/device-specs/specs-avr2
-        COLLECT_GCC=/usr/local/bin/avr-gcc
-        Target: avr
-        Configured with: ../configure --target=avr --prefix=/usr/local/Cellar/avr-gcc@9/9.4.0_1 --libdir=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9 --enable-languages=c,c++ --with-ld=/usr/local/opt/avr-binutils/bin/avr-ld --with-as=/usr/local/opt/avr-binutils/bin/avr-as --disable-nls --disable-libssp --disable-shared --disable-threads --disable-libgomp --with-dwarf2 --with-avrlibc --with-system-zlib --with-pkgversion='Homebrew AVR GCC 9.4.0_1' --with-bugurl=https://github.com/osx-cross/homebrew-avr/issues SED=/usr/bin/sed --without-build-config
-        Thread model: single
-        gcc version 9.4.0 (Homebrew AVR GCC 9.4.0_1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ee151.dir/CMakeCCompilerABI.c.o' '-c' '-specs=device-specs/specs-avr2'
-         /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/cc1 -quiet -v /usr/local/share/cmake/Modules/CMakeCCompilerABI.c -mn-flash=6 -mskip-bug -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_ee151.dir/CMakeCCompilerABI.c.o -version -o /var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccNPlmfB.s
-        GNU C17 (Homebrew AVR GCC 9.4.0_1) version 9.4.0 (avr)
-        	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.0.40.1), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
-        
-        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring nonexistent directory "/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/sys-include"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include
-         /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include-fixed
-         /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/include
-        End of search list.
-        GNU C17 (Homebrew AVR GCC 9.4.0_1) version 9.4.0 (avr)
-        	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.0.40.1), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
-        
-        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        Compiler executable checksum: 409f3c2360e9999fb050374658754953
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ee151.dir/CMakeCCompilerABI.c.o' '-c' '-specs=device-specs/specs-avr2'
-         /usr/local/opt/avr-binutils/bin/avr-as -v -mmcu=avr2 -mgcc-isr -o CMakeFiles/cmTC_ee151.dir/CMakeCCompilerABI.c.o /var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccNPlmfB.s
-        GNU assembler version 2.44 (avr) using BFD version (GNU Binutils) 2.44
-        COMPILER_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/
-        LIBRARY_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ee151.dir/CMakeCCompilerABI.c.o' '-c' '-specs=device-specs/specs-avr2'
-        Linking C executable cmTC_ee151
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee151.dir/link.txt --verbose=1
-        Using built-in specs.
-        Reading specs from /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/device-specs/specs-avr2
-        COLLECT_GCC=/usr/local/bin/avr-gcc
-        COLLECT_LTO_WRAPPER=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/lto-wrapper
-        Target: avr
-        Configured with: ../configure --target=avr --prefix=/usr/local/Cellar/avr-gcc@9/9.4.0_1 --libdir=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9 --enable-languages=c,c++ --with-ld=/usr/local/opt/avr-binutils/bin/avr-ld --with-as=/usr/local/opt/avr-binutils/bin/avr-as --disable-nls --disable-libssp --disable-shared --disable-threads --disable-libgomp --with-dwarf2 --with-avrlibc --with-system-zlib --with-pkgversion='Homebrew AVR GCC 9.4.0_1' --with-bugurl=https://github.com/osx-cross/homebrew-avr/issues SED=/usr/bin/sed --without-build-config
-        Thread model: single
-        gcc version 9.4.0 (Homebrew AVR GCC 9.4.0_1) 
-        COMPILER_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/
-        LIBRARY_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ee151' '-specs=device-specs/specs-avr2'
-         /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/collect2 -plugin /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//cco9F3Y9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_ee151 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_ee151.dir/CMakeCCompilerABI.c.o --start-group -lgcc -lm -lc --end-group
-        collect2 version 9.4.0
-        /usr/local/opt/avr-binutils/bin/avr-ld -plugin /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//cco9F3Y9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_ee151 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_ee151.dir/CMakeCCompilerABI.c.o --start-group -lgcc -lm -lc --end-group
-        /usr/local/opt/avr-binutils/bin/avr-ld: Error: unable to disambiguate: -search_paths_first (did you mean --search_paths_first ?)
-        collect2: error: ld returned 1 exit status
-        /usr/local/bin/avr-gcc -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_ee151.dir/CMakeCCompilerABI.c.o -o cmTC_ee151
-        make[1]: *** [cmTC_ee151] Error 1
-        make: *** [cmTC_ee151/fast] Error 2
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
-      - "CMakeLists.txt"
-    checks:
-      - "Check for working C compiler: /usr/local/bin/avr-gcc"
-    directories:
-      source: "/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-2Nz3dc"
-      binary: "/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-2Nz3dc"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: ""
-    buildResult:
-      variable: "CMAKE_C_COMPILER_WORKS"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-2Nz3dc'
-        
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5a579/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_5a579.dir/build.make CMakeFiles/cmTC_5a579.dir/build
-        Building C object CMakeFiles/cmTC_5a579.dir/testCCompiler.c.o
-        /usr/local/bin/avr-gcc    -o CMakeFiles/cmTC_5a579.dir/testCCompiler.c.o -c /Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-2Nz3dc/testCCompiler.c
-        Linking C executable cmTC_5a579
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a579.dir/link.txt --verbose=1
-        /usr/local/opt/avr-binutils/bin/avr-ld: Error: unable to disambiguate: -search_paths_first (did you mean --search_paths_first ?)
-        collect2: error: ld returned 1 exit status
-        /usr/local/bin/avr-gcc -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_5a579.dir/testCCompiler.c.o -o cmTC_5a579
-        make[1]: *** [cmTC_5a579] Error 1
-        make: *** [cmTC_5a579/fast] Error 2
-        
-      exitCode: 2
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "FIRST"
-      SearchAppBundle: "FIRST"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCCompilerId.c.in"
-    candidate_directories:
-      - "/usr/local/share/cmake/Modules/"
-    found: "/usr/local/share/cmake/Modules/CMakeCCompilerId.c.in"
-    search_context:
-      ENV{PATH}:
-        - "/usr/local/bin"
-        - "/System/Cryptexes/App/usr/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/sbin"
-        - "/sbin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: /usr/local/bin/avr-gcc 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      0
-      
-      
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
-      
-      The C compiler identification is GNU, found in:
-        /Users/ellie/Projects/accelerator/build/CMakeFiles/4.1.0/CompilerIdC/a.out
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "FIRST"
-      SearchAppBundle: "FIRST"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCXXCompilerId.cpp.in"
-    candidate_directories:
-      - "/usr/local/share/cmake/Modules/"
-    found: "/usr/local/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
-    search_context:
-      ENV{PATH}:
-        - "/usr/local/bin"
-        - "/System/Cryptexes/App/usr/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/sbin"
-        - "/sbin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt"
-    message: |
-      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /usr/local/bin/avr-g++ 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      0
-      
-      
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
-      
-      The CXX compiler identification is GNU, found in:
-        /Users/ellie/Projects/accelerator/build/CMakeFiles/4.1.0/CompilerIdCXX/a.out
-      
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-m4JsFY"
-      binary: "/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-m4JsFY"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: ""
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-m4JsFY'
-        
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9e762/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_9e762.dir/build.make CMakeFiles/cmTC_9e762.dir/build
-        Building C object CMakeFiles/cmTC_9e762.dir/CMakeCCompilerABI.c.o
-        /usr/local/bin/avr-gcc   -v -Wl,-v -o CMakeFiles/cmTC_9e762.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c
-        Using built-in specs.
-        Reading specs from /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/device-specs/specs-avr2
-        COLLECT_GCC=/usr/local/bin/avr-gcc
-        Target: avr
-        Configured with: ../configure --target=avr --prefix=/usr/local/Cellar/avr-gcc@9/9.4.0_1 --libdir=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9 --enable-languages=c,c++ --with-ld=/usr/local/opt/avr-binutils/bin/avr-ld --with-as=/usr/local/opt/avr-binutils/bin/avr-as --disable-nls --disable-libssp --disable-shared --disable-threads --disable-libgomp --with-dwarf2 --with-avrlibc --with-system-zlib --with-pkgversion='Homebrew AVR GCC 9.4.0_1' --with-bugurl=https://github.com/osx-cross/homebrew-avr/issues SED=/usr/bin/sed --without-build-config
-        Thread model: single
-        gcc version 9.4.0 (Homebrew AVR GCC 9.4.0_1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9e762.dir/CMakeCCompilerABI.c.o' '-c' '-specs=device-specs/specs-avr2'
-         /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/cc1 -quiet -v /usr/local/share/cmake/Modules/CMakeCCompilerABI.c -mn-flash=6 -mskip-bug -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_9e762.dir/CMakeCCompilerABI.c.o -version -o /var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccx0s16V.s
-        GNU C17 (Homebrew AVR GCC 9.4.0_1) version 9.4.0 (avr)
-        	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.0.40.1), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
-        
-        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring nonexistent directory "/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/sys-include"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include
-         /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include-fixed
-         /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/include
-        End of search list.
-        GNU C17 (Homebrew AVR GCC 9.4.0_1) version 9.4.0 (avr)
-        	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.0.40.1), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
-        
-        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        Compiler executable checksum: 409f3c2360e9999fb050374658754953
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9e762.dir/CMakeCCompilerABI.c.o' '-c' '-specs=device-specs/specs-avr2'
-         /usr/local/opt/avr-binutils/bin/avr-as -v -mmcu=avr2 -mgcc-isr -o CMakeFiles/cmTC_9e762.dir/CMakeCCompilerABI.c.o /var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccx0s16V.s
-        GNU assembler version 2.44 (avr) using BFD version (GNU Binutils) 2.44
-        COMPILER_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/
-        LIBRARY_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9e762.dir/CMakeCCompilerABI.c.o' '-c' '-specs=device-specs/specs-avr2'
-        Linking C executable cmTC_9e762
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e762.dir/link.txt --verbose=1
-        Using built-in specs.
-        Reading specs from /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/device-specs/specs-avr2
-        COLLECT_GCC=/usr/local/bin/avr-gcc
-        COLLECT_LTO_WRAPPER=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/lto-wrapper
-        Target: avr
-        Configured with: ../configure --target=avr --prefix=/usr/local/Cellar/avr-gcc@9/9.4.0_1 --libdir=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9 --enable-languages=c,c++ --with-ld=/usr/local/opt/avr-binutils/bin/avr-ld --with-as=/usr/local/opt/avr-binutils/bin/avr-as --disable-nls --disable-libssp --disable-shared --disable-threads --disable-libgomp --with-dwarf2 --with-avrlibc --with-system-zlib --with-pkgversion='Homebrew AVR GCC 9.4.0_1' --with-bugurl=https://github.com/osx-cross/homebrew-avr/issues SED=/usr/bin/sed --without-build-config
-        Thread model: single
-        gcc version 9.4.0 (Homebrew AVR GCC 9.4.0_1) 
-        COMPILER_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/
-        LIBRARY_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9e762' '-specs=device-specs/specs-avr2'
-         /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/collect2 -plugin /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//cc3B5T1V.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_9e762 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_9e762.dir/CMakeCCompilerABI.c.o --start-group -lgcc -lm -lc --end-group
-        collect2 version 9.4.0
-        /usr/local/opt/avr-binutils/bin/avr-ld -plugin /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//cc3B5T1V.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_9e762 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_9e762.dir/CMakeCCompilerABI.c.o --start-group -lgcc -lm -lc --end-group
-        /usr/local/opt/avr-binutils/bin/avr-ld: Error: unable to disambiguate: -search_paths_first (did you mean --search_paths_first ?)
-        collect2: error: ld returned 1 exit status
-        /usr/local/bin/avr-gcc -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_9e762.dir/CMakeCCompilerABI.c.o -o cmTC_9e762
-        make[1]: *** [cmTC_9e762] Error 1
-        make: *** [cmTC_9e762/fast] Error 2
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
-      - "CMakeLists.txt"
-    checks:
-      - "Check for working C compiler: /usr/local/bin/avr-gcc"
-    directories:
-      source: "/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-rczVnU"
-      binary: "/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-rczVnU"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: ""
-    buildResult:
-      variable: "CMAKE_C_COMPILER_WORKS"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-rczVnU'
-        
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7e854/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_7e854.dir/build.make CMakeFiles/cmTC_7e854.dir/build
-        Building C object CMakeFiles/cmTC_7e854.dir/testCCompiler.c.o
-        /usr/local/bin/avr-gcc    -o CMakeFiles/cmTC_7e854.dir/testCCompiler.c.o -c /Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-rczVnU/testCCompiler.c
-        Linking C executable cmTC_7e854
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e854.dir/link.txt --verbose=1
-        /usr/local/opt/avr-binutils/bin/avr-ld: Error: unable to disambiguate: -search_paths_first (did you mean --search_paths_first ?)
-        collect2: error: ld returned 1 exit status
-        /usr/local/bin/avr-gcc -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7e854.dir/testCCompiler.c.o -o cmTC_7e854
-        make[1]: *** [cmTC_7e854] Error 1
-        make: *** [cmTC_7e854/fast] Error 2
-        
-      exitCode: 2
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:19 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "FIRST"
-      SearchAppBundle: "FIRST"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCCompilerId.c.in"
-    candidate_directories:
-      - "/usr/local/share/cmake/Modules/"
-    found: "/usr/local/share/cmake/Modules/CMakeCCompilerId.c.in"
-    search_context:
-      ENV{PATH}:
-        - "/usr/local/bin"
-        - "/System/Cryptexes/App/usr/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/sbin"
-        - "/sbin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:19 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: /usr/local/bin/avr-gcc 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      0
-      
-      
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
-      
-      The C compiler identification is GNU, found in:
-        /Users/ellie/Projects/accelerator/build/CMakeFiles/4.1.0/CompilerIdC/a.out
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:19 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "FIRST"
-      SearchAppBundle: "FIRST"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCXXCompilerId.cpp.in"
-    candidate_directories:
-      - "/usr/local/share/cmake/Modules/"
-    found: "/usr/local/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
-    search_context:
-      ENV{PATH}:
-        - "/usr/local/bin"
-        - "/System/Cryptexes/App/usr/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/sbin"
-        - "/sbin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:19 (project)"
-    message: |
-      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /usr/local/bin/avr-g++ 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      0
-      
-      
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
-      
-      The CXX compiler identification is GNU, found in:
-        /Users/ellie/Projects/accelerator/build/CMakeFiles/4.1.0/CompilerIdCXX/a.out
-      
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:19 (project)"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-h2IHx9"
-      binary: "/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-h2IHx9"
+      source: "/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-TQLnt6"
+      binary: "/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-TQLnt6"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: ""
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-h2IHx9'
+        Change Dir: '/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-TQLnt6'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_aea6c/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_aea6c.dir/build.make CMakeFiles/cmTC_aea6c.dir/build
-        Building C object CMakeFiles/cmTC_aea6c.dir/CMakeCCompilerABI.c.o
-        /usr/local/bin/avr-gcc   -v -Wl,-v -o CMakeFiles/cmTC_aea6c.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_785df/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_785df.dir/build.make CMakeFiles/cmTC_785df.dir/build
+        Building C object CMakeFiles/cmTC_785df.dir/CMakeCCompilerABI.c.obj
+        /usr/local/bin/avr-gcc   -v -o CMakeFiles/cmTC_785df.dir/CMakeCCompilerABI.c.obj -c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         Reading specs from /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/device-specs/specs-avr2
         COLLECT_GCC=/usr/local/bin/avr-gcc
@@ -1628,8 +1114,8 @@ events:
         Configured with: ../configure --target=avr --prefix=/usr/local/Cellar/avr-gcc@9/9.4.0_1 --libdir=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9 --enable-languages=c,c++ --with-ld=/usr/local/opt/avr-binutils/bin/avr-ld --with-as=/usr/local/opt/avr-binutils/bin/avr-as --disable-nls --disable-libssp --disable-shared --disable-threads --disable-libgomp --with-dwarf2 --with-avrlibc --with-system-zlib --with-pkgversion='Homebrew AVR GCC 9.4.0_1' --with-bugurl=https://github.com/osx-cross/homebrew-avr/issues SED=/usr/bin/sed --without-build-config
         Thread model: single
         gcc version 9.4.0 (Homebrew AVR GCC 9.4.0_1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aea6c.dir/CMakeCCompilerABI.c.o' '-c' '-specs=device-specs/specs-avr2'
-         /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/cc1 -quiet -v /usr/local/share/cmake/Modules/CMakeCCompilerABI.c -mn-flash=6 -mskip-bug -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_aea6c.dir/CMakeCCompilerABI.c.o -version -o /var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccNWoRSy.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_785df.dir/CMakeCCompilerABI.c.obj' '-c' '-specs=device-specs/specs-avr2'
+         /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/cc1 -quiet -v /usr/local/share/cmake/Modules/CMakeCCompilerABI.c -mn-flash=6 -mskip-bug -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_785df.dir/CMakeCCompilerABI.c.obj -version -o /var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccUAEpzg.s
         GNU C17 (Homebrew AVR GCC 9.4.0_1) version 9.4.0 (avr)
         	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.0.40.1), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1648,14 +1134,14 @@ events:
         warning: MPFR header version 4.2.1 differs from library version 4.2.2.
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 409f3c2360e9999fb050374658754953
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aea6c.dir/CMakeCCompilerABI.c.o' '-c' '-specs=device-specs/specs-avr2'
-         /usr/local/opt/avr-binutils/bin/avr-as -v -mmcu=avr2 -mgcc-isr -o CMakeFiles/cmTC_aea6c.dir/CMakeCCompilerABI.c.o /var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccNWoRSy.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_785df.dir/CMakeCCompilerABI.c.obj' '-c' '-specs=device-specs/specs-avr2'
+         /usr/local/opt/avr-binutils/bin/avr-as -v -mmcu=avr2 -mgcc-isr -o CMakeFiles/cmTC_785df.dir/CMakeCCompilerABI.c.obj /var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccUAEpzg.s
         GNU assembler version 2.44 (avr) using BFD version (GNU Binutils) 2.44
         COMPILER_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/
         LIBRARY_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aea6c.dir/CMakeCCompilerABI.c.o' '-c' '-specs=device-specs/specs-avr2'
-        Linking C executable cmTC_aea6c
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aea6c.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_785df.dir/CMakeCCompilerABI.c.obj' '-c' '-specs=device-specs/specs-avr2'
+        Linking C executable cmTC_785df
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_785df.dir/link.txt --verbose=1
         Using built-in specs.
         Reading specs from /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/device-specs/specs-avr2
         COLLECT_GCC=/usr/local/bin/avr-gcc
@@ -1666,46 +1152,151 @@ events:
         gcc version 9.4.0 (Homebrew AVR GCC 9.4.0_1) 
         COMPILER_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/
         LIBRARY_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_aea6c' '-specs=device-specs/specs-avr2'
-         /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/collect2 -plugin /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccQtN1Kb.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_aea6c -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_aea6c.dir/CMakeCCompilerABI.c.o --start-group -lgcc -lm -lc --end-group
-        collect2 version 9.4.0
-        /usr/local/opt/avr-binutils/bin/avr-ld -plugin /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccQtN1Kb.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_aea6c -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_aea6c.dir/CMakeCCompilerABI.c.o --start-group -lgcc -lm -lc --end-group
-        /usr/local/opt/avr-binutils/bin/avr-ld: Error: unable to disambiguate: -search_paths_first (did you mean --search_paths_first ?)
-        collect2: error: ld returned 1 exit status
-        /usr/local/bin/avr-gcc -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_aea6c.dir/CMakeCCompilerABI.c.o -o cmTC_aea6c
-        make[1]: *** [cmTC_aea6c] Error 1
-        make: *** [cmTC_aea6c/fast] Error 2
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_785df' '-specs=device-specs/specs-avr2'
+         /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/collect2 -plugin /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//cc0cjz4J.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_785df -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib CMakeFiles/cmTC_785df.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_785df' '-specs=device-specs/specs-avr2'
+        /usr/local/bin/avr-gcc  -v CMakeFiles/cmTC_785df.dir/CMakeCCompilerABI.c.obj -o cmTC_785df
         
-      exitCode: 2
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:23 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include]
+          add: [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include-fixed]
+          add: [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/include]
+        end of search list found
+        collapse include dir [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include] ==> [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include]
+        collapse include dir [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include-fixed] ==> [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include-fixed]
+        collapse include dir [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/include] ==> [/usr/local/Cellar/avr-gcc@9/9.4.0_1/avr/include]
+        implicit include dirs: [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include;/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include-fixed;/usr/local/Cellar/avr-gcc@9/9.4.0_1/avr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:23 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-TQLnt6']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_785df/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_785df.dir/build.make CMakeFiles/cmTC_785df.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_785df.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/usr/local/bin/avr-gcc   -v -o CMakeFiles/cmTC_785df.dir/CMakeCCompilerABI.c.obj -c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [Reading specs from /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/device-specs/specs-avr2]
+        ignore line: [COLLECT_GCC=/usr/local/bin/avr-gcc]
+        ignore line: [Target: avr]
+        ignore line: [Configured with: ../configure --target=avr --prefix=/usr/local/Cellar/avr-gcc@9/9.4.0_1 --libdir=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9 --enable-languages=c,c++ --with-ld=/usr/local/opt/avr-binutils/bin/avr-ld --with-as=/usr/local/opt/avr-binutils/bin/avr-as --disable-nls --disable-libssp --disable-shared --disable-threads --disable-libgomp --with-dwarf2 --with-avrlibc --with-system-zlib --with-pkgversion='Homebrew AVR GCC 9.4.0_1' --with-bugurl=https://github.com/osx-cross/homebrew-avr/issues SED=/usr/bin/sed --without-build-config]
+        ignore line: [Thread model: single]
+        ignore line: [gcc version 9.4.0 (Homebrew AVR GCC 9.4.0_1) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_785df.dir/CMakeCCompilerABI.c.obj' '-c' '-specs=device-specs/specs-avr2']
+        ignore line: [ /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/cc1 -quiet -v /usr/local/share/cmake/Modules/CMakeCCompilerABI.c -mn-flash=6 -mskip-bug -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_785df.dir/CMakeCCompilerABI.c.obj -version -o /var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccUAEpzg.s]
+        ignore line: [GNU C17 (Homebrew AVR GCC 9.4.0_1) version 9.4.0 (avr)]
+        ignore line: [	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.0.40.1)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/sys-include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include]
+        ignore line: [ /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include-fixed]
+        ignore line: [ /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Homebrew AVR GCC 9.4.0_1) version 9.4.0 (avr)]
+        ignore line: [	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.0.40.1)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 409f3c2360e9999fb050374658754953]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_785df.dir/CMakeCCompilerABI.c.obj' '-c' '-specs=device-specs/specs-avr2']
+        ignore line: [ /usr/local/opt/avr-binutils/bin/avr-as -v -mmcu=avr2 -mgcc-isr -o CMakeFiles/cmTC_785df.dir/CMakeCCompilerABI.c.obj /var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccUAEpzg.s]
+        ignore line: [GNU assembler version 2.44 (avr) using BFD version (GNU Binutils) 2.44]
+        ignore line: [COMPILER_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/]
+        ignore line: [LIBRARY_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_785df.dir/CMakeCCompilerABI.c.obj' '-c' '-specs=device-specs/specs-avr2']
+        ignore line: [Linking C executable cmTC_785df]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_785df.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [Reading specs from /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/device-specs/specs-avr2]
+        ignore line: [COLLECT_GCC=/usr/local/bin/avr-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/lto-wrapper]
+        ignore line: [Target: avr]
+        ignore line: [Configured with: ../configure --target=avr --prefix=/usr/local/Cellar/avr-gcc@9/9.4.0_1 --libdir=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9 --enable-languages=c,c++ --with-ld=/usr/local/opt/avr-binutils/bin/avr-ld --with-as=/usr/local/opt/avr-binutils/bin/avr-as --disable-nls --disable-libssp --disable-shared --disable-threads --disable-libgomp --with-dwarf2 --with-avrlibc --with-system-zlib --with-pkgversion='Homebrew AVR GCC 9.4.0_1' --with-bugurl=https://github.com/osx-cross/homebrew-avr/issues SED=/usr/bin/sed --without-build-config]
+        ignore line: [Thread model: single]
+        ignore line: [gcc version 9.4.0 (Homebrew AVR GCC 9.4.0_1) ]
+        ignore line: [COMPILER_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/]
+        ignore line: [LIBRARY_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_785df' '-specs=device-specs/specs-avr2']
+        link line: [ /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/collect2 -plugin /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//cc0cjz4J.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_785df -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib CMakeFiles/cmTC_785df.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group]
+          arg [/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//cc0cjz4J.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lm] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_785df] ==> ignore
+          arg [-L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0] ==> dir [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0]
+          arg [-L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib] ==> dir [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib]
+          arg [CMakeFiles/cmTC_785df.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [--start-group] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lm] ==> lib [m]
+          arg [-lc] ==> lib [c]
+          arg [--end-group] ==> ignore
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_785df' '-specs=device-specs/specs-avr2']
+        ignore line: [/usr/local/bin/avr-gcc  -v CMakeFiles/cmTC_785df.dir/CMakeCCompilerABI.c.obj -o cmTC_785df]
+        ignore line: []
+        ignore line: []
+        collapse library dir [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0] ==> [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0]
+        collapse library dir [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib] ==> [/usr/local/Cellar/avr-gcc@9/9.4.0_1/avr/lib]
+        implicit libs: [gcc;m;c]
+        implicit objs: []
+        implicit dirs: [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0;/usr/local/Cellar/avr-gcc@9/9.4.0_1/avr/lib]
+        implicit fwks: []
+      
+      
   -
     kind: "try_compile-v1"
     backtrace:
       - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:19 (project)"
+      - "CMakeLists.txt:23 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-vbw1SK"
-      binary: "/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-vbw1SK"
+      source: "/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-4xSIMe"
+      binary: "/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-4xSIMe"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: ""
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-vbw1SK'
+        Change Dir: '/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-4xSIMe'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_484f3/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_484f3.dir/build.make CMakeFiles/cmTC_484f3.dir/build
-        Building CXX object CMakeFiles/cmTC_484f3.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/local/bin/avr-g++   -v -Wl,-v -o CMakeFiles/cmTC_484f3.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_339d8/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_339d8.dir/build.make CMakeFiles/cmTC_339d8.dir/build
+        Building CXX object CMakeFiles/cmTC_339d8.dir/CMakeCXXCompilerABI.cpp.obj
+        /usr/local/bin/avr-g++   -v -o CMakeFiles/cmTC_339d8.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         Reading specs from /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/device-specs/specs-avr2
         COLLECT_GCC=/usr/local/bin/avr-g++
@@ -1713,8 +1304,8 @@ events:
         Configured with: ../configure --target=avr --prefix=/usr/local/Cellar/avr-gcc@9/9.4.0_1 --libdir=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9 --enable-languages=c,c++ --with-ld=/usr/local/opt/avr-binutils/bin/avr-ld --with-as=/usr/local/opt/avr-binutils/bin/avr-as --disable-nls --disable-libssp --disable-shared --disable-threads --disable-libgomp --with-dwarf2 --with-avrlibc --with-system-zlib --with-pkgversion='Homebrew AVR GCC 9.4.0_1' --with-bugurl=https://github.com/osx-cross/homebrew-avr/issues SED=/usr/bin/sed --without-build-config
         Thread model: single
         gcc version 9.4.0 (Homebrew AVR GCC 9.4.0_1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_484f3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-specs=device-specs/specs-avr2'
-         /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/cc1plus -quiet -v /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp -mn-flash=6 -mskip-bug -quiet -dumpbase CMakeCXXCompilerABI.cpp -auxbase-strip CMakeFiles/cmTC_484f3.dir/CMakeCXXCompilerABI.cpp.o -version -mn-flash=6 -mskip-bug -fno-rtti -fno-enforce-eh-specs -fno-exceptions -o /var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//cc0gYsaI.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_339d8.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-specs=device-specs/specs-avr2'
+         /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/cc1plus -quiet -v /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp -mn-flash=6 -mskip-bug -quiet -dumpbase CMakeCXXCompilerABI.cpp -auxbase-strip CMakeFiles/cmTC_339d8.dir/CMakeCXXCompilerABI.cpp.obj -version -mn-flash=6 -mskip-bug -fno-rtti -fno-enforce-eh-specs -fno-exceptions -o /var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccTBWPNX.s
         GNU C++14 (Homebrew AVR GCC 9.4.0_1) version 9.4.0 (avr)
         	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.0.40.1), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1736,14 +1327,14 @@ events:
         warning: MPFR header version 4.2.1 differs from library version 4.2.2.
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 5697833bb755abfb600c182b6f38cb22
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_484f3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-specs=device-specs/specs-avr2'
-         /usr/local/opt/avr-binutils/bin/avr-as -v -mmcu=avr2 -mgcc-isr -o CMakeFiles/cmTC_484f3.dir/CMakeCXXCompilerABI.cpp.o /var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//cc0gYsaI.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_339d8.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-specs=device-specs/specs-avr2'
+         /usr/local/opt/avr-binutils/bin/avr-as -v -mmcu=avr2 -mgcc-isr -o CMakeFiles/cmTC_339d8.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccTBWPNX.s
         GNU assembler version 2.44 (avr) using BFD version (GNU Binutils) 2.44
         COMPILER_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/
         LIBRARY_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_484f3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-specs=device-specs/specs-avr2'
-        Linking CXX executable cmTC_484f3
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_484f3.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_339d8.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-specs=device-specs/specs-avr2'
+        Linking CXX executable cmTC_339d8
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_339d8.dir/link.txt --verbose=1
         Using built-in specs.
         Reading specs from /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/device-specs/specs-avr2
         COLLECT_GCC=/usr/local/bin/avr-g++
@@ -1754,15 +1345,128 @@ events:
         gcc version 9.4.0 (Homebrew AVR GCC 9.4.0_1) 
         COMPILER_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/
         LIBRARY_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_484f3' '-specs=device-specs/specs-avr2'
-         /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/collect2 -plugin /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccrlfVmj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_484f3 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_484f3.dir/CMakeCXXCompilerABI.cpp.o -lgcc -lm --start-group -lgcc -lm -lc --end-group
-        collect2 version 9.4.0
-        /usr/local/opt/avr-binutils/bin/avr-ld -plugin /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccrlfVmj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_484f3 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_484f3.dir/CMakeCXXCompilerABI.cpp.o -lgcc -lm --start-group -lgcc -lm -lc --end-group
-        /usr/local/opt/avr-binutils/bin/avr-ld: Error: unable to disambiguate: -search_paths_first (did you mean --search_paths_first ?)
-        collect2: error: ld returned 1 exit status
-        /usr/local/bin/avr-g++ -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_484f3.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_484f3
-        make[1]: *** [cmTC_484f3] Error 1
-        make: *** [cmTC_484f3/fast] Error 2
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_339d8' '-specs=device-specs/specs-avr2'
+         /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/collect2 -plugin /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccOyLkib.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_339d8 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib CMakeFiles/cmTC_339d8.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm --start-group -lgcc -lm -lc --end-group
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_339d8' '-specs=device-specs/specs-avr2'
+        /usr/local/bin/avr-g++  -v CMakeFiles/cmTC_339d8.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_339d8
         
-      exitCode: 2
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:23 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include]
+          add: [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include-fixed]
+          add: [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/include]
+        end of search list found
+        collapse include dir [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include] ==> [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include]
+        collapse include dir [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include-fixed] ==> [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include-fixed]
+        collapse include dir [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/include] ==> [/usr/local/Cellar/avr-gcc@9/9.4.0_1/avr/include]
+        implicit include dirs: [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include;/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include-fixed;/usr/local/Cellar/avr-gcc@9/9.4.0_1/avr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:23 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/Users/ellie/Projects/accelerator/build/CMakeFiles/CMakeScratch/TryCompile-4xSIMe']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_339d8/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_339d8.dir/build.make CMakeFiles/cmTC_339d8.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_339d8.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/usr/local/bin/avr-g++   -v -o CMakeFiles/cmTC_339d8.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [Reading specs from /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/device-specs/specs-avr2]
+        ignore line: [COLLECT_GCC=/usr/local/bin/avr-g++]
+        ignore line: [Target: avr]
+        ignore line: [Configured with: ../configure --target=avr --prefix=/usr/local/Cellar/avr-gcc@9/9.4.0_1 --libdir=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9 --enable-languages=c,c++ --with-ld=/usr/local/opt/avr-binutils/bin/avr-ld --with-as=/usr/local/opt/avr-binutils/bin/avr-as --disable-nls --disable-libssp --disable-shared --disable-threads --disable-libgomp --with-dwarf2 --with-avrlibc --with-system-zlib --with-pkgversion='Homebrew AVR GCC 9.4.0_1' --with-bugurl=https://github.com/osx-cross/homebrew-avr/issues SED=/usr/bin/sed --without-build-config]
+        ignore line: [Thread model: single]
+        ignore line: [gcc version 9.4.0 (Homebrew AVR GCC 9.4.0_1) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_339d8.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-specs=device-specs/specs-avr2']
+        ignore line: [ /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/cc1plus -quiet -v /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp -mn-flash=6 -mskip-bug -quiet -dumpbase CMakeCXXCompilerABI.cpp -auxbase-strip CMakeFiles/cmTC_339d8.dir/CMakeCXXCompilerABI.cpp.obj -version -mn-flash=6 -mskip-bug -fno-rtti -fno-enforce-eh-specs -fno-exceptions -o /var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccTBWPNX.s]
+        ignore line: [GNU C++14 (Homebrew AVR GCC 9.4.0_1) version 9.4.0 (avr)]
+        ignore line: [	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.0.40.1)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/include/c++/9.4.0"]
+        ignore line: [ignoring nonexistent directory "/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/include/c++/9.4.0/avr"]
+        ignore line: [ignoring nonexistent directory "/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/include/c++/9.4.0/backward"]
+        ignore line: [ignoring nonexistent directory "/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/sys-include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include]
+        ignore line: [ /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include-fixed]
+        ignore line: [ /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (Homebrew AVR GCC 9.4.0_1) version 9.4.0 (avr)]
+        ignore line: [	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.0.40.1)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 5697833bb755abfb600c182b6f38cb22]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_339d8.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-specs=device-specs/specs-avr2']
+        ignore line: [ /usr/local/opt/avr-binutils/bin/avr-as -v -mmcu=avr2 -mgcc-isr -o CMakeFiles/cmTC_339d8.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccTBWPNX.s]
+        ignore line: [GNU assembler version 2.44 (avr) using BFD version (GNU Binutils) 2.44]
+        ignore line: [COMPILER_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/]
+        ignore line: [LIBRARY_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_339d8.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-specs=device-specs/specs-avr2']
+        ignore line: [Linking CXX executable cmTC_339d8]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_339d8.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [Reading specs from /usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/device-specs/specs-avr2]
+        ignore line: [COLLECT_GCC=/usr/local/bin/avr-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/lto-wrapper]
+        ignore line: [Target: avr]
+        ignore line: [Configured with: ../configure --target=avr --prefix=/usr/local/Cellar/avr-gcc@9/9.4.0_1 --libdir=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9 --enable-languages=c,c++ --with-ld=/usr/local/opt/avr-binutils/bin/avr-ld --with-as=/usr/local/opt/avr-binutils/bin/avr-as --disable-nls --disable-libssp --disable-shared --disable-threads --disable-libgomp --with-dwarf2 --with-avrlibc --with-system-zlib --with-pkgversion='Homebrew AVR GCC 9.4.0_1' --with-bugurl=https://github.com/osx-cross/homebrew-avr/issues SED=/usr/bin/sed --without-build-config]
+        ignore line: [Thread model: single]
+        ignore line: [gcc version 9.4.0 (Homebrew AVR GCC 9.4.0_1) ]
+        ignore line: [COMPILER_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/]
+        ignore line: [LIBRARY_PATH=/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/:/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_339d8' '-specs=device-specs/specs-avr2']
+        link line: [ /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/collect2 -plugin /usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccOyLkib.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_339d8 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0 -L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib CMakeFiles/cmTC_339d8.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm --start-group -lgcc -lm -lc --end-group]
+          arg [/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/local/Cellar/avr-gcc@9/9.4.0_1/libexec/gcc/avr/9.4.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/folders/v9/9jz8_jfn6vv6b_sn83s_w_3r0000gn/T//ccOyLkib.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lm] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_339d8] ==> ignore
+          arg [-L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0] ==> dir [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0]
+          arg [-L/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib] ==> dir [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib]
+          arg [CMakeFiles/cmTC_339d8.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lm] ==> lib [m]
+          arg [--start-group] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lm] ==> lib [m]
+          arg [-lc] ==> lib [c]
+          arg [--end-group] ==> ignore
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_339d8' '-specs=device-specs/specs-avr2']
+        ignore line: [/usr/local/bin/avr-g++  -v CMakeFiles/cmTC_339d8.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_339d8]
+        ignore line: []
+        ignore line: []
+        collapse library dir [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0] ==> [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0]
+        collapse library dir [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/../../../../../../avr/lib] ==> [/usr/local/Cellar/avr-gcc@9/9.4.0_1/avr/lib]
+        implicit libs: [gcc;m;gcc;m;c]
+        implicit objs: []
+        implicit dirs: [/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0;/usr/local/Cellar/avr-gcc@9/9.4.0_1/avr/lib]
+        implicit fwks: []
+      
+      
 ...

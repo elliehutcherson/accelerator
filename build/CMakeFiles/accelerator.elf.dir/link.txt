@@ -1,1 +1,1 @@
-/usr/local/bin/avr-g++ -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names -mmcu=atmega328p CMakeFiles/accelerator.elf.dir/blink.cc.o -o accelerator.elf
+/usr/local/bin/avr-g++ -mmcu=atmega328p -DF_CPU=16000000UL -Os -Wall -Wextra -mmcu=atmega328p CMakeFiles/accelerator.elf.dir/blink.cc.obj -o accelerator.elf

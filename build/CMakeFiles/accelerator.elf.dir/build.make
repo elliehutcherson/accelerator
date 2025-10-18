@@ -72,11 +72,11 @@ include CMakeFiles/accelerator.elf.dir/flags.make
 CMakeFiles/accelerator.elf.dir/codegen:
 .PHONY : CMakeFiles/accelerator.elf.dir/codegen
 
-CMakeFiles/accelerator.elf.dir/blink.cc.o: CMakeFiles/accelerator.elf.dir/flags.make
-CMakeFiles/accelerator.elf.dir/blink.cc.o: /Users/ellie/Projects/accelerator/blink.cc
-CMakeFiles/accelerator.elf.dir/blink.cc.o: CMakeFiles/accelerator.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ellie/Projects/accelerator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/accelerator.elf.dir/blink.cc.o"
-	/usr/local/bin/avr-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/accelerator.elf.dir/blink.cc.o -MF CMakeFiles/accelerator.elf.dir/blink.cc.o.d -o CMakeFiles/accelerator.elf.dir/blink.cc.o -c /Users/ellie/Projects/accelerator/blink.cc
+CMakeFiles/accelerator.elf.dir/blink.cc.obj: CMakeFiles/accelerator.elf.dir/flags.make
+CMakeFiles/accelerator.elf.dir/blink.cc.obj: /Users/ellie/Projects/accelerator/blink.cc
+CMakeFiles/accelerator.elf.dir/blink.cc.obj: CMakeFiles/accelerator.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ellie/Projects/accelerator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/accelerator.elf.dir/blink.cc.obj"
+	/usr/local/bin/avr-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/accelerator.elf.dir/blink.cc.obj -MF CMakeFiles/accelerator.elf.dir/blink.cc.obj.d -o CMakeFiles/accelerator.elf.dir/blink.cc.obj -c /Users/ellie/Projects/accelerator/blink.cc
 
 CMakeFiles/accelerator.elf.dir/blink.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/accelerator.elf.dir/blink.cc.i"
@@ -88,12 +88,12 @@ CMakeFiles/accelerator.elf.dir/blink.cc.s: cmake_force
 
 # Object files for target accelerator.elf
 accelerator_elf_OBJECTS = \
-"CMakeFiles/accelerator.elf.dir/blink.cc.o"
+"CMakeFiles/accelerator.elf.dir/blink.cc.obj"
 
 # External object files for target accelerator.elf
 accelerator_elf_EXTERNAL_OBJECTS =
 
-accelerator.elf: CMakeFiles/accelerator.elf.dir/blink.cc.o
+accelerator.elf: CMakeFiles/accelerator.elf.dir/blink.cc.obj
 accelerator.elf: CMakeFiles/accelerator.elf.dir/build.make
 accelerator.elf: CMakeFiles/accelerator.elf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ellie/Projects/accelerator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable accelerator.elf"

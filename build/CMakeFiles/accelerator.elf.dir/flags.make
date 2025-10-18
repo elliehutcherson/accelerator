@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/Users/ellie/Projects/accelerator/include/avr-libc/include
 
-CXX_FLAGS = -g
+CXX_FLAGS = -mmcu=atmega328p -DF_CPU=16000000UL -Os -Wall -Wextra
 

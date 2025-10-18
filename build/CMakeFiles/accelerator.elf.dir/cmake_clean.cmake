@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/accelerator.elf.dir/blink.cc.o"
-  "CMakeFiles/accelerator.elf.dir/blink.cc.o.d"
+  "CMakeFiles/accelerator.elf.dir/blink.cc.obj"
+  "CMakeFiles/accelerator.elf.dir/blink.cc.obj.d"
   "accelerator.elf"
   "accelerator.elf.pdb"
 )

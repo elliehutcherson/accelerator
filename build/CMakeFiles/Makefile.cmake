@@ -25,6 +25,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake"
   "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake"
   "/usr/local/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake"
+  "/usr/local/share/cmake/Modules/CMakeDetermineSystem.cmake"
   "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake"
   "/usr/local/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/usr/local/share/cmake/Modules/CMakeInitializeConfigs.cmake"
@@ -32,11 +33,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake"
   "/usr/local/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake"
   "/usr/local/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake"
+  "/usr/local/share/cmake/Modules/CMakeSystem.cmake.in"
   "/usr/local/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/local/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake"
   "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake"
   "/usr/local/share/cmake/Modules/CMakeTestCompilerCommon.cmake"
+  "/usr/local/share/cmake/Modules/CMakeUnixFindMake.cmake"
   "/usr/local/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake"
   "/usr/local/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake"
   "/usr/local/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake"
@@ -104,18 +107,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake"
   "/usr/local/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake"
   "/usr/local/share/cmake/Modules/Internal/FeatureTesting.cmake"
-  "/usr/local/share/cmake/Modules/Platform/Apple-GNU-C.cmake"
-  "/usr/local/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake"
-  "/usr/local/share/cmake/Modules/Platform/Apple-GNU.cmake"
-  "/usr/local/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake"
-  "/usr/local/share/cmake/Modules/Platform/Darwin-Initialize.cmake"
-  "/usr/local/share/cmake/Modules/Platform/Darwin.cmake"
-  "/usr/local/share/cmake/Modules/Platform/Linker/Apple-AppleClang-C.cmake"
-  "/usr/local/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake"
-  "/usr/local/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake"
-  "/usr/local/share/cmake/Modules/Platform/Linker/Apple-C.cmake"
-  "/usr/local/share/cmake/Modules/Platform/Linker/Apple-CXX.cmake"
-  "/usr/local/share/cmake/Modules/Platform/UnixPaths.cmake"
+  "/usr/local/share/cmake/Modules/Platform/Generic.cmake"
   )
 
 # The corresponding makefile is:
@@ -126,6 +118,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "CMakeFiles/4.1.0/CMakeSystem.cmake"
   "CMakeFiles/4.1.0/CMakeCCompiler.cmake"
   "CMakeFiles/4.1.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.1.0/CMakeCCompiler.cmake"
@@ -138,4 +131,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/accelerator.elf.dir/DependInfo.cmake"
+  "CMakeFiles/upload.dir/DependInfo.cmake"
   )

@@ -30,16 +30,16 @@ set(CMAKE_C_COMPILER_RANLIB "/usr/local/bin/avr-gcc-ranlib")
 set(CMAKE_LINKER "/usr/local/bin/avr-ld")
 set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
-set(CMAKE_C_COMPILER_LINKER "")
+set(CMAKE_C_COMPILER_LINKER "NOTFOUND")
 set(CMAKE_C_COMPILER_LINKER_ID "")
 set(CMAKE_C_COMPILER_LINKER_VERSION )
 set(CMAKE_C_COMPILER_LINKER_FRONTEND_VARIANT )
 set(CMAKE_MT "")
-set(CMAKE_TAPI "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/tapi")
+set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")
 set(CMAKE_COMPILER_IS_GNUCC 1)
 set(CMAKE_C_COMPILER_LOADED 1)
-set(CMAKE_C_COMPILER_WORKS 1)
-set(CMAKE_C_ABI_COMPILED FALSE)
+set(CMAKE_C_COMPILER_WORKS TRUE)
+set(CMAKE_C_ABI_COMPILED TRUE)
 
 set(CMAKE_C_COMPILER_ENV_VAR "CC")
 
@@ -52,9 +52,9 @@ set(CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED )
 set(CMAKE_C_LINKER_PUSHPOP_STATE_SUPPORTED )
 
 # Save compiler ABI information.
-set(CMAKE_C_SIZEOF_DATA_PTR "")
-set(CMAKE_C_COMPILER_ABI "")
-set(CMAKE_C_BYTE_ORDER "")
+set(CMAKE_C_SIZEOF_DATA_PTR "2")
+set(CMAKE_C_COMPILER_ABI "ELF")
+set(CMAKE_C_BYTE_ORDER "LITTLE_ENDIAN")
 set(CMAKE_C_LIBRARY_ARCHITECTURE "")
 
 if(CMAKE_C_SIZEOF_DATA_PTR)
@@ -75,10 +75,10 @@ if(CMAKE_C_CL_SHOWINCLUDES_PREFIX)
 endif()
 
 
-set(CMAKE_C_SYSROOT_FLAG "-isysroot")
-set(CMAKE_C_OSX_DEPLOYMENT_TARGET_FLAG "")
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "")
-set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "")
+
+
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include;/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include-fixed;/usr/local/Cellar/avr-gcc@9/9.4.0_1/avr/include")
+set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;m;c")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/usr/local/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0;/usr/local/Cellar/avr-gcc@9/9.4.0_1/avr/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
