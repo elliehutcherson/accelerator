@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named accelerator.elf
+# Target rules for targets named blink.elf
 
 # Build rule for target.
-accelerator.elf: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 accelerator.elf
-.PHONY : accelerator.elf
+blink.elf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blink.elf
+.PHONY : blink.elf
 
 # fast build rule for target.
-accelerator.elf/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/accelerator.elf.dir/build.make CMakeFiles/accelerator.elf.dir/build
-.PHONY : accelerator.elf/fast
+blink.elf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.elf.dir/build.make CMakeFiles/blink.elf.dir/build
+.PHONY : blink.elf/fast
 
 #=============================================================================
 # Target rules for targets named upload
@@ -142,12 +142,38 @@ upload/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/upload.dir/build.make CMakeFiles/upload.dir/build
 .PHONY : upload/fast
 
+#=============================================================================
+# Target rules for targets named toggle.elf
+
+# Build rule for target.
+toggle.elf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 toggle.elf
+.PHONY : toggle.elf
+
+# fast build rule for target.
+toggle.elf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/toggle.elf.dir/build.make CMakeFiles/toggle.elf.dir/build
+.PHONY : toggle.elf/fast
+
+#=============================================================================
+# Target rules for targets named upload_toggle
+
+# Build rule for target.
+upload_toggle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 upload_toggle
+.PHONY : upload_toggle
+
+# fast build rule for target.
+upload_toggle/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/upload_toggle.dir/build.make CMakeFiles/upload_toggle.dir/build
+.PHONY : upload_toggle/fast
+
 blink.obj: blink.cc.obj
 .PHONY : blink.obj
 
 # target to build an object file
 blink.cc.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/accelerator.elf.dir/build.make CMakeFiles/accelerator.elf.dir/blink.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.elf.dir/build.make CMakeFiles/blink.elf.dir/blink.cc.obj
 .PHONY : blink.cc.obj
 
 blink.i: blink.cc.i
@@ -155,7 +181,7 @@ blink.i: blink.cc.i
 
 # target to preprocess a source file
 blink.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/accelerator.elf.dir/build.make CMakeFiles/accelerator.elf.dir/blink.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.elf.dir/build.make CMakeFiles/blink.elf.dir/blink.cc.i
 .PHONY : blink.cc.i
 
 blink.s: blink.cc.s
@@ -163,8 +189,32 @@ blink.s: blink.cc.s
 
 # target to generate assembly for a file
 blink.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/accelerator.elf.dir/build.make CMakeFiles/accelerator.elf.dir/blink.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.elf.dir/build.make CMakeFiles/blink.elf.dir/blink.cc.s
 .PHONY : blink.cc.s
+
+toggle.obj: toggle.cc.obj
+.PHONY : toggle.obj
+
+# target to build an object file
+toggle.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/toggle.elf.dir/build.make CMakeFiles/toggle.elf.dir/toggle.cc.obj
+.PHONY : toggle.cc.obj
+
+toggle.i: toggle.cc.i
+.PHONY : toggle.i
+
+# target to preprocess a source file
+toggle.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/toggle.elf.dir/build.make CMakeFiles/toggle.elf.dir/toggle.cc.i
+.PHONY : toggle.cc.i
+
+toggle.s: toggle.cc.s
+.PHONY : toggle.s
+
+# target to generate assembly for a file
+toggle.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/toggle.elf.dir/build.make CMakeFiles/toggle.elf.dir/toggle.cc.s
+.PHONY : toggle.cc.s
 
 # Help Target
 help:
@@ -175,10 +225,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... upload"
-	@echo "... accelerator.elf"
+	@echo "... upload_toggle"
+	@echo "... blink.elf"
+	@echo "... toggle.elf"
 	@echo "... blink.obj"
 	@echo "... blink.i"
 	@echo "... blink.s"
+	@echo "... toggle.obj"
+	@echo "... toggle.i"
+	@echo "... toggle.s"
 .PHONY : help
 
 

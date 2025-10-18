@@ -1,4 +1,6 @@
-/Users/ellie/Projects/accelerator/build/CMakeFiles/accelerator.elf.dir
+/Users/ellie/Projects/accelerator/build/CMakeFiles/blink.elf.dir
 /Users/ellie/Projects/accelerator/build/CMakeFiles/upload.dir
+/Users/ellie/Projects/accelerator/build/CMakeFiles/toggle.elf.dir
+/Users/ellie/Projects/accelerator/build/CMakeFiles/upload_toggle.dir
 /Users/ellie/Projects/accelerator/build/CMakeFiles/edit_cache.dir
 /Users/ellie/Projects/accelerator/build/CMakeFiles/rebuild_cache.dir

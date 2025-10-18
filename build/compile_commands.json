@@ -1,8 +1,14 @@
 [
 {
   "directory": "/Users/ellie/Projects/accelerator/build",
-  "command": "/usr/local/bin/avr-g++  -I/Users/ellie/Projects/accelerator/include/avr-libc/include -mmcu=atmega328p -DF_CPU=16000000UL -Os -Wall -Wextra -o CMakeFiles/accelerator.elf.dir/blink.cc.obj -c /Users/ellie/Projects/accelerator/blink.cc",
+  "command": "/usr/local/bin/avr-g++  -I/Users/ellie/Projects/accelerator/include/avr-libc/include -mmcu=atmega328p -DF_CPU=16000000UL -Os -Wall -Wextra -o CMakeFiles/blink.elf.dir/blink.cc.obj -c /Users/ellie/Projects/accelerator/blink.cc",
   "file": "/Users/ellie/Projects/accelerator/blink.cc",
-  "output": "CMakeFiles/accelerator.elf.dir/blink.cc.obj"
+  "output": "CMakeFiles/blink.elf.dir/blink.cc.obj"
+},
+{
+  "directory": "/Users/ellie/Projects/accelerator/build",
+  "command": "/usr/local/bin/avr-g++  -I/Users/ellie/Projects/accelerator/include/avr-libc/include -mmcu=atmega328p -DF_CPU=16000000UL -Os -Wall -Wextra -o CMakeFiles/toggle.elf.dir/toggle.cc.obj -c /Users/ellie/Projects/accelerator/toggle.cc",
+  "file": "/Users/ellie/Projects/accelerator/toggle.cc",
+  "output": "CMakeFiles/toggle.elf.dir/toggle.cc.obj"
 }
 ]
